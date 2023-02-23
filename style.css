@@ -1,0 +1,649 @@
+/* Global CSS */
+
+@media only screen and (max-width: 600px) {
+  /* Add mobile-responsive CSS here */
+  #nav-bar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  #nav-bar .main {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  #nav-bar .navlist, .navlist-e {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  text-align: center;
+  }
+  #nav-bar .navlist-e .dropdown-menu {
+  position: relative;
+  }
+  #search {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  }
+  ul#book-list li {
+  width: 100%;
+  }
+  #error-message{
+  width:100%;
+  margin-left: 0%;
+  }
+  }
+  
+  @media only screen and (max-width: 400px) {
+  /* Add more mobile-responsive CSS here */
+  #title {
+  font-size: x-large;
+  }
+  #nav-bar a {
+  font-size: medium;
+  }
+  ul#book-list li h3 {
+  font-size: 1em;
+  }
+  ul#book-list li p {
+  font-size: 0.8em;
+  }
+  }
+
+
+body {
+    background-color: #EFF5F5;
+    color: #497174;
+    font-family: Montserrat;
+    margin: 0;
+    background-image: url("images/background.png");
+  }
+  
+  a {
+    color: #EB6440;
+  }
+  
+  #title {
+    font-size:xxx-large;
+    color: #EFF5F5;
+    margin: 20px;
+  }
+
+  span {
+    color:#EB6440;
+  }
+
+  #wrapper {
+    background-color: #497174;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+  }
+
+  #nav-bar {
+    align-items: center;
+    margin-left: 400px;
+  }
+
+  #nav-bar .main {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    margin: auto;
+    padding: 0;
+  }
+  
+  #nav-bar .navlist, .navlist-e {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  #nav-bar a {
+    color:#EFF5F5;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  #nav-bar a:hover {
+    color: #EB6440;
+  }
+
+  .centered-h2 {
+    display: flex; /* Use flexbox to layout the container */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    margin: 20px;
+}
+
+#quote{
+  padding-top: 30px;
+}
+
+/* Main Page CSS */  
+    #search {
+    display: flex; /* Use flexbox to layout the container */
+    justify-content: center; /* Center the items horizontally */
+    max-height: 600px;
+    width: 600px;
+  }
+
+  #search-bar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #available-book{
+    background-color: #497174;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 8%;
+    width: 83%;
+    border-radius: 3px;
+  }
+
+  ul#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  ul#book-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 10px;
+    background-color: #EFF5F5;
+    border: 1px solid #497174;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px 0px #497174;
+  }
+  
+  ul#book-list li img {
+    max-height: 200px;
+    padding: 20px;
+  }
+  
+  ul#book-list li h3 {
+    margin: 10px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  ul#book-list li p {
+    margin: 10px;
+    font-size: 0.9em;
+  }
+  
+  ul#book-list li button {
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: #EB6440;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  ul#book-list li button:hover {
+    background-color: #497174;
+  }
+
+  #error-message{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:#497174;
+    width: 40%;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 31%;
+    margin-top: 40px;
+  }
+  
+  .navlist-e .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;
+    width: 150px;
+    background-color: #497174;
+    color:#FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+    }
+
+    .dropdown-item {
+        padding: 10px;
+    }
+
+    .navlist-e .dropdown-menu.show{
+    display: block;
+    }
+
+  #intro-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  #intro-2{
+    margin-left: 35px;
+  }
+
+  #intro-2 span{
+    font-weight: 900;
+    color: #497174;
+  }
+
+/* Form CSS */
+
+#wrapper-2{
+  display: flex;
+  align-items: center;
+}
+
+form {
+    background-color: #EFF5F5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+label {
+    color: #497174;
+  }
+  
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+input[type="file"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+input[type="submit"] {
+    width: 100%;
+    background-color: #EB6440;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+input[type="submit"]:hover {
+    background-color: #497174;
+  }
+  
+/* Bookpage */
+
+#post-form {
+    width: 50%;
+    margin: 40px;
+    margin-left: 25%;
+}
+
+/* Book Details Page - Landin Page */
+/* Container for the book details */
+#book-details {
+    background-color: #EFF5F5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #EB6440;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+  /* Image of the book */
+  #left-detail{
+    flex: 1;
+  }
+
+  #book-d-image {
+    height: 300px;
+    margin-right: 100px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  #right-detail{
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Text details of the book */
+  #book-d-title {
+    color: #497174;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #book-d-author, #book-d-genre {
+    color: #497174;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Request trade button */
+  .request-trade-button-d {
+    background-color: #497174;
+    color: #EFF5F5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .request-trade-button-d:hover {
+    background-color: #EB6440;
+  }
+  
+
+  /* Form Elements - Sign-up/Login */
+
+main {
+  display: flex;
+  align-items: top;
+}
+
+/* INTRO SECTION */
+.intro {
+  padding: 6%;
+  display: block;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+}
+
+.intro p {
+  line-height: 1.5;
+  display: block;
+}
+
+.bookcastle {
+  width: 30em;
+}
+
+/* SIGN UP SECTION */
+.top-submit-btn {
+  width: 470px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: hsl(240, 75%, 98%);
+  background-color: #EB6440;
+  box-shadow: 2px 6px 10px hsla(257, 60%, 14%, .7);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.top-submit-btn:hover {
+  background-color: #EB6440;
+}
+
+.top-submit-btn:active {
+  background: #EB6440;
+}
+
+.top-submit-btn span {
+  color: #497174;
+}
+
+.intro span{
+    font-weight: 900;
+    color: #497174;
+}
+
+#form-full {
+  margin: 20px;
+  box-shadow: 2px 5px 6px hsla(257, 60%, 14%, .7);
+  border-radius: 8px;
+  background-color: EFF5F5;
+  width: 500px;
+  height: fit-content;
+}
+
+.input-form {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-form div {
+  padding: 1%;
+  margin: 20px;
+}
+
+.input-form input {
+  min-width: 400px;
+  padding: 4%;
+  border-radius: 5px;
+  background-color: #EFF5F5;
+  border: 1px solid #497174;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-form input:focus {
+  outline: none;
+  border: 1px solid #497174;
+  box-shadow: 0 0 10px #c1c1c1;
+}
+
+/* STYLING FOR INPUT FIELDS & MESSAGES */
+.success {
+  border: 1px solid hsl(76, 78%, 45%);
+  background-color: hsla(76, 78%, 45%, .3);
+}
+
+.failed {
+  border: 1px solid hsl(0, 100%, 74%);
+  background-color: hsla(354, 100%, 66%, .3);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.error-txt {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.success-txt {
+  color: hsl(76, 78%, 45%);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.input-form .txt {
+  text-align: right;
+}
+
+.btm-submit-btn {
+  width: 400px;
+  padding: 4%;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: hsl(240, 75%, 98%);
+  background-color: #497174;
+  box-shadow: 1px 3px 5px hsla(257, 60%, 14%, .7);
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.btm-submit-btn:hover {
+  background-color: #EB6440;
+}
+
+.btm-submit-btn:active {
+  background: #EB6440;
+}
+
+.input-form p {
+  font-size: 0.7rem;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.terms {
+  font-weight: 700;
+  color: #EB6440;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+
+/* UNDERLINE ANIMATION FOR TERMS */
+.terms:hover {
+  color: #497174;
+}
+
+.terms::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #497174;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.terms:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* PLACEHOLDER SUPPORT */
+::placeholder { /* Support for Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsla(249, 10%, 26%, .6);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+:-ms-input-placeholder { /* Support for Internet Explorer 10-11 */
+  color: hsla(249, 10%, 26%, .6);
+  font-size: 14px;
+}
+
+::-ms-input-placeholder { /* Support for Microsoft Edge */
+  color: hsla(249, 10%, 26%, .6);
+  font-size: 14px;
+}
+
+/* Any devices, 1200px and below*/
+@media only screen and (max-width: 1200px) {
+  body {
+    background-image: url("images/background.png");
+  }
+  
+  main {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* INTRO SECTION */
+  .intro {
+    margin-bottom: 100px;
+  }
+  
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* SIGN UP SECTION */
+  .top-submit-btn {
+    width: 330px;
+    height: 80px;
+    padding: 0 20%;
+  }
+  
+  .input-form input {
+    width: 280px;
+    padding: 6%;
+  }
+  
+  .btm-submit-btn {
+    width: 280px;
+    padding: 6%;
+  }
+  
+  .input-form p {
+    padding: 0 11%;
+  }
+}
+
+@media only screen and (min-width: 545px) and (max-width: 1200px) {
+  .top-submit-btn {
+    padding: 0 15%;
+  }
+}
+
+#form-full {
+  margin: 50px;
+}
+
+#login-redirect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+#login-redirect a{
+  padding: 5px;
+}
+
+#signup-title{
+  font-size: 1.7em;
+}

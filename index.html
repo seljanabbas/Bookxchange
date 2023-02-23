@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BookXchange</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        
+    </head>
+
+    <body>
+        <!-- Navigatsion Bar-->
+        <div id="wrapper">
+            <h1 id="title">Book<span>X</span>change</h1>
+        <nav id="nav-bar">
+            <ul class="main">
+              <li class="navlist"><a href="index.html">Home</a></li>
+              <li class="navlist"><a href="allbooks.html">Browse Books</a></li>
+              <li class="navlist"><a href="listbook.html">Add a Book</a></li>
+              <li class="navlist-e"><a href="#">Login/Sign Up</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="signup.html">Create a new account</a></li>
+                  <li class="dropdown-item"><a href="login.html">Login</a></li>
+                  <li class="dropdown-item"><a href="mybooks.html">My Books</a></li>
+                </ul>
+            </li>
+            </ul>
+          </nav>
+        </div>
+
+            <div id="wrapper-2">
+            <section class="intro" id="intro-2"> <!-- Intro Section -->
+                <h1>Sign Up and Start Trading Your Favorite Books</h1>
+                <p><span>Welcome to BookXchange, the ultimate platform for book lovers to trade and share their beloved novels, stories, and knowledge. Our mission is to promote the joy of reading and bring communities together through a shared love of literature. One reader's treasure is another reader's delight, and with our platform, you can easily trade and discover new books to add to your personal library.</span></p>
+                <div>
+                  <button class="top-submit-btn" type="submit">Try it free 7 days <span>then $20/mo. thereafter</span></button>
+                </div>
+              </section>
+            <div id = "search">
+                <form id = "search-bar" >
+                    <p>Search for desired book below by either entering book name or the author name.</p>
+                    <label for="name" id = "name" class="book-name">Name of the book:</label>
+                    <input type="text" id = "book-name" class="book-name" style="width: 50;">
+                    <label for="author" id = "author" class="book-auth">Author of the book:</label>
+                    <input type="text" id="book-auth" class="book-auth" width="width: 50;">
+                    <input type="submit" id="search-btn" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div id="available-book">
+            <h2 class="centered-h2">Available Books</h2>
+            <p id="intro-text">Find selection of available book listing available for trade.</p>
+        </div>
+
+            <ul id="book-list">
+            <!-- Book elements will be added here -->
+            </ul> 
+            <div id="error-message"></div>
+
+            <script src="retrievebooks.js"></script>
+            <script src="script.js"></script>
+        </body>
+</html>

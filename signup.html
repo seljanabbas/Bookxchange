@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BookXchange</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    </head>
+
+    <body>
+        <!-- Navigation Bar-->
+        <div id="wrapper">
+            <h1 id="title">Book<span>X</span>change</h1>
+        <nav id="nav-bar">
+            <ul class="main">
+              <li class="navlist"><a href="index.html">Home</a></li>
+              <li class="navlist"><a href="allbooks.html">Browse Books</a></li>
+              <li class="navlist"><a href="listbook.html">Add a Book</a></li>
+              <li class="navlist-e"><a href="#">Login/Sign Up</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="signup.html">Create a new account</a></li>
+                  <li class="dropdown-item"><a href="login.html">Login</a></li>
+                  <li class="dropdown-item"><a href="mybooks.html">My Books</a></li>
+                </ul>
+            </li>
+            </ul>
+          </nav>
+        </div>
+
+        <main>
+          <section class="intro"> <!-- Intro Section -->
+            <h1>Sign Up Now and Start Trading Your Favorite Books</h1>
+            <p><span>Sign up now to join our community of book lovers and trade your treasured reads with others. As a member, you'll have access to a wider selection of books and the opportunity to discover new favorites. Plus, for a limited time, sign up and receive a complimentary book from our curated collection. Don't miss out on the joy of sharing and discovering great literature. Sign up now!</span></p>
+            <div>
+              <button class="top-submit-btn" type="submit">Try it free 7 days <span>then $20/mo. thereafter</span></button>
+            </div>
+          </section>
+        
+          <section> <!-- Sign Up Section-->
+            <form id ="form-full" action="/submit.php" method="POST">
+              <div class="input-form">
+                <h1 id="signup-title">Sign Up Here!</h1>
+                <div>
+                  <input class ="fname-field" type="text" name="first_name" pattern="[A-Za-z]{1,255}" placeholder="First Name">
+                  <p class="fname-error-message fname-success-message txt"></p>
+                </div>
+                
+                <div>
+                  <input class= "lname-field" type="text" name="last_name" pattern="[A-Za-z]{1,255}" placeholder="Last Name">
+                  <p class="lname-error-message lname-success-message txt"></p>
+                </div>
+                
+                <div>
+                  <input class="email-field" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email Address">
+                  <p class="email-error-message email-success-message txt"></p>
+                </div>
+                
+                <div>
+                  <input class="pwd-field" type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password">
+                  <p class="pwd-error-message pwd-success-message txt"></p>
+                </div>
+
+                <div>
+                  <input class="pwd-field" type="password" name="pwd-2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Re-type Password">
+                  <p class="pwd-error-message pwd-success-message txt"></p>
+                </div>
+                 
+                <div>
+                  <button class="btm-submit-btn" type="submit">Claim your free trial </button>
+                </div>
+                
+                <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
+              </div>
+
+              <div id="login-redirect">
+                <p>Do you already have an account? </p><a href="login.html"> Login</a>
+              </div>
+
+            </form>
+          </section>
+        </main>
+
+        <script src="script.js"></script>
+        <script src="form.js"></script>
+        </body>
+        
+</html>

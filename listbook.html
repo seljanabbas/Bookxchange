@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>List a book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+        <!-- Navigation Bar-->
+        <div id="wrapper">
+          <h1 id="title">Book<span>X</span>change</h1>
+      <nav id="nav-bar">
+          <ul class="main">
+            <li class="navlist"><a href="index.html">Home</a></li>
+            <li class="navlist"><a href="allbooks.html">Browse Books</a></li>
+            <li class="navlist"><a href="listbook.html">Add a Book</a></li>
+            <li class="navlist-e"><a href="#">Login/Sign Up</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="signup.html">Create a new account</a></li>
+                <li class="dropdown-item"><a href="login.html">Login</a></li>
+                <li class="dropdown-item"><a href="mybooks.html">My Books</a></li>
+              </ul>
+          </li>
+          </ul>
+        </nav>
+      </div>
+
+    <form id="post-form" action="/book.php">
+        <h2 class="centered-h2">Post a Book Listing</h2>
+        <label for="title-input">Title:</label><br>
+        <input type="text" id="title-input" name="title"><br>
+        <label for="author-input">Author:</label><br>
+        <input type="text" id="author-input" name="author"><br>
+        <label for="genre-input">Please select genre:</label><br>
+        <select id="genre-input" name="genre">
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-fiction</option>
+          <option value="biography">Biography</option>
+          <option value="self-help">Self-help</option>
+          <option value="sci-fi">Sci-fi</option>
+        </select><br><br>
+        <input type="text" id="genre-input" name="genre"><br>
+        <label for="description-input">Description:</label><br>
+        <textarea id="description-input" name="description"></textarea><br>
+        <label for="image-input">Please upload an image of the book:</label><br>
+        <input type="file" id="image-input" name="image"><br><br>
+        <label for="state">Please select the option which matches most:</label> <br>
+        <select id="state" name="state">
+          <option value="new">New</option>
+          <option value="like_new">Used, in new condition</option>
+          <option value="good">Used, in good condition</option>
+          <option value="fair">Used, in fair condition</option>
+          <option value="poor">Used, in poor condition</option>
+        </select><br><br>
+        <input type="submit" id="post-listing" value="Post Listing"></button>
+      </form> 
+      
+      <script src="script.js"></script>
+</body>
+
+</html>

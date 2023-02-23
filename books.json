@@ -1,0 +1,67 @@
+{    "books": [
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "coverImage": "images/great-gatsby.jpg",
+        "id":"001"
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Fiction",
+        "coverImage": "images/pride-and-prejudice.jpg",
+        "id":"002"
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "genre": "Fiction",
+        "coverImage": "images/the-alchemist.jpg",
+        "id":"003"
+      },
+      {
+        "title": "The 7 Habits of Highly Effective People",
+        "author": "Stephen R. Covey",
+        "genre": "Self-help",
+        "coverImage": "images/habits-of-highly-effective-people.jpg",
+        "id":"004"
+      },
+      {
+        "title": "The Book Thief",
+        "author": "Markus Zusak",
+        "genre": "Fiction",
+        "coverImage": "images/the-book-thief.jpg",
+        "id":"005"
+      },
+      {
+        "title": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "genre": "Fiction",
+        "coverImage": "images/the-kite-runner.jpg",
+        "id":"006"
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "coverImage": "images/to-kill-a-mockingbird.jpg",
+        "id":"007"
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "coverImage": "images/catcher-in-the-rye.jpg",
+        "id":"008"
+      },
+      {
+        "title": "The Art of War",
+        "author": "Sun Tzu",
+        "genre": "Self-help",
+        "coverImage": "images/the-art-of-war.jpg",
+        "id":"009"
+      }
+    ]
+  }
+  
